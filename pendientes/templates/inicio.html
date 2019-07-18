@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: darkblue;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1{
+                color: #ffffff;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Bienvenidos al infierno</h1>
+        <h3> Disfrute su estadia, pueden hacerse amigos entre ustedes</h3>
+        Hola me llamo {{ nombre }} y tengo {{ edad }} mis hobbies son 
+        {% for x in Hobbies %}
+            <li> {{ x }} </li>
+        {% endfor %}
+        <p>y bueh, mis tareas son:</p>
+        <br>
+        <h3>solo no se peleen c: </h3>
+        {% for tarea in lista_tareas %}
+            <li> {{ tarea.titulo }} : {{ tarea.descripcion }} </li>
+        {% endfor %}
+    </body>
+</html>
